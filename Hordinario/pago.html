@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Garnachenado</title>
+    <link rel="stylesheet" href="pago.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/Hordinario/imagenes/image-removebg-preview.png" alt="Garnachenado Logo">
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Buscar recetas...">
+                <button class="search-btn">Buscar</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="Inicio.html" class="nav-link">Principal</a>
+            <a href="favotitas.html" class="nav-link">Favoritas</a>
+            <a href="autor.html" class="nav-link">Autor</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="payment-container">
+            <h1>Información de Pago</h1>
+            
+            <!-- Payment Form -->
+            <div class="payment-form">
+                <form>
+                    <div class="form-section">
+                        <h2>Datos Personales</h2>
+                        
+                        <div class="form-group">
+                            <label>Nombre Completo</label>
+                            <input type="text" placeholder="Juan Pérez López" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Correo Electrónico</label>
+                            <input type="email" placeholder="correo@ejemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Teléfono</label>
+                            <input type="tel" placeholder="221 123 4567" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h2>Datos de Tarjeta</h2>
+                        
+                        <div class="form-group">
+                            <label>Número de Tarjeta</label>
+                            <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nombre en la Tarjeta</label>
+                            <input type="text" placeholder="Como aparece en la tarjeta" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Fecha de Vencimiento</label>
+                                <input type="text" placeholder="MM/AA" maxlength="5" required>
+                            </div>
+                            <div class="form-group">
+                                <label>CVV</label>
+                                <input type="text" placeholder="123" maxlength="4" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-methods">
+                        <h3>Métodos de Pago Aceptados</h3>
+                        <div class="payment-icons">
+                            <span class="payment-icon">Visa</span>
+                            <span class="payment-icon">Mastercard</span>
+                            <span class="payment-icon">American Express</span>
+                            <span class="payment-icon">Transferencia Bancaria</span>
+                        </div>
+                    </div>
+
+                    <div class="price-summary">
+                        <div class="price-row">
+                            <span>Subtotal:</span>
+                            <span>$99.00 MXN</span>
+                        </div>
+                        <div class="price-row">
+                            <span>IVA (16%):</span>
+                            <span>$15.84 MXN</span>
+                        </div>
+                        <div class="price-row total">
+                            <span>Total a Pagar:</span>
+                            <span>$114.84 MXN</span>
+                        </div>
+                    </div>
+
+                    <div class="terms">
+                        <label class="checkbox-container">
+                        
+                        </label>
+                    </div>
+
+                    <button type="submit" class="pay-btn">Procesar Pago - $114.84 MXN</button>
+
+                    <div class="secure-info">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Guarantee Section -->
+            <div class="guarantee-section">
+                <h3>Garantía de Satisfacción 100%</h3>
+                <p>Si no estás completamente satisfecho con tu compra, te devolvemos tu dinero dentro de los primeros 7 días sin hacer preguntas.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>PIE DE PÁGINA</p>
+            <p>&copy; 2024 Garnachenado - Todas las recetas mexicanas en un solo lugar</p>
+            <div class="footer-links">
+                <a href="#">Aviso de privacidad</a> | 
+                <a href="#">Términos y condiciones</a> | 
+                <a href="#">Política de cookies</a>
+            </div>
+            <div class="footer-contact">
+                <p>Tel: +52 221 556 52 12 | ubaldogutierrez.gla.537@gmail.com</p>
+                <p>Calle 3 Sur 5759, Col. El Cerrito, C.P. 72440, Puebla, Pue., México</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
