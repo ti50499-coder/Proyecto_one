@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garnacheando</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="imagenes/image-removebg-preview.png" alt="Garnachenado Logo">
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Buscar recetas...">
+                <button class="search-btn">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="Inicio.html" class="nav-link">Principal</a>
+            <a href="favotitas.html" class="nav-link">Favoritas</a>
+            <a href="autor.html" class="nav-link">Autor</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="content-wrapper">
+            <!-- Recipes Section -->
+            <section class="recipes-section">
+                <h1 class="main-title">Garnacheando </h1>
+
+                <!-- Category 1 -->
+                <div class="category-section">
+                    <h2 class="category-title">GARNACHAS POPULARES</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" onclick="moveCarousel('carousel1', -1)">❮</button>
+                        <div class="carousel" id="carousel1">
+                            <div class="carousel-track">
+                                <a href="receta1.html" class="recipe-card">
+                                    <img src="imagenes/tacos.png" alt="Tacos al Pastor">
+                                    <p class="recipe-name">Tacos al Pastor</p>
+                                </a>
+                                <a href="receta2.html" class="recipe-card">
+                                    <img src="imagenes/quesadillas.png" alt="Quesadillas">
+                                    <p class="recipe-name">Quesadillas</p>
+                                </a>
+                                <a href="receta3.html" class="recipe-card">
+                                    <img src="imagenes/gorditas.png" alt="Gorditas">
+                                    <p class="recipe-name">Gorditas</p>
+                                </a>
+                                <a href="receta4.html" class="recipe-card">
+                                    <img src="imagenes/sopes.png" alt="Sopes">
+                                    <p class="recipe-name">Sopes</p>
+                                </a>
+                                <a href="receta5.html" class="recipe-card">
+                                    <img src="tlacoyos.jpg" alt="Tlacoyos">
+                                    <p class="recipe-name">Tlacoyos</p>
+                                </a>
+                                <a href="receta6.html" class="recipe-card">
+                                    <img src="huaraches.jpg" alt="Huaraches">
+                                    <p class="recipe-name">Huaraches</p>
+                                </a>
+                                <a href="receta7.html" class="recipe-card">
+                                    <img src="tostadas.jpg" alt="Tostadas">
+                                    <p class="recipe-name">Tostadas</p>
+                                </a>
+                                <a href="receta8.html" class="recipe-card">
+                                    <img src="chalupas.jpg" alt="Chalupas">
+                                    <p class="recipe-name">Chalupas</p>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" onclick="moveCarousel('carousel1', 1)">❯</button>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="category-section">
+                    <h2 class="category-title">ANTOJITOS ESPECIALES</h2>
+                    <div class="carousel-container">
+                        <button class="carousel-btn prev" onclick="moveCarousel('carousel2', -1)">❮</button>
+                        <div class="carousel" id="carousel2">
+                            <div class="carousel-track">
+                                <a href="receta9.html" class="recipe-card">
+                                    <img src="imagenes/tamales.png" alt="Tamales">
+                                    <p class="recipe-name">Tamales</p>
+                                </a>
+                                <a href="receta10.html" class="recipe-card">
+                                    <img src="imagenes/elote.png" alt="Elotes">
+                                    <p class="recipe-name">Elotes</p>
+                                </a>
+                                <a href="receta11.html" class="recipe-card">
+                                    <img src="imagenes/esquites.png" alt="Esquites">
+                                    <p class="recipe-name">Esquites</p>
+                                </a>
+                                <a href="receta12.html" class="recipe-card">
+                                    <img src="imagenes/memelas.png" alt="Memelas">
+                                    <p class="recipe-name">Memelas</p>
+                                </a>
+                                <a href="receta13.html" class="recipe-card">
+                                    <img src="flautas.jpg" alt="Flautas">
+                                    <p class="recipe-name">Flautas</p>
+                                </a>
+                                <a href="receta14.html" class="recipe-card">
+                                    <img src="pambazos.jpg" alt="Pambazos">
+                                    <p class="recipe-name">Pambazos</p>
+                                </a>
+                                <a href="receta15.html" class="recipe-card">
+                                    <img src="molletes.jpg" alt="Molletes">
+                                    <p class="recipe-name">Molletes</p>
+                                </a>
+                                <a href="receta16.html" class="recipe-card">
+                                    <img src="sincronizadas.jpg" alt="Sincronizadas">
+                                    <p class="recipe-name">Sincronizadas</p>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="carousel-btn next" onclick="moveCarousel('carousel2', 1)">❯</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ads Sidebar -->
+            <aside class="ads-section">
+                <div class="ad-box">
+                    <p>Anuncios</p>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Garnachenado - Todas las recetas mexicanas en un solo lugar</p>
+            <p>Tel: +52 221 556 52 12 | ubaldogutierrez.gla.537@gmail.com</p>
+            <p>Calle 3 Sur 5759, Col. El Cerrito, C.P. 72440, Puebla, Pue., México</p>
+            <p>Aviso de privacidad | Términos y condiciones | Política de cookies</p>
+            <p>Síguenos: Facebook: Ubaldo GUtierrez | Instagram: @u5bal3do7 | TikTok: @ubaldo.537</p>
+        </div>
+    </footer>
+
+</body>
+</html>
