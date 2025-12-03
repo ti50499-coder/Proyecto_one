@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #178582;
+}
+
+.search-container {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    gap: 10px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid #178582;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.search-bar:focus {
+    border-color: #45a049;
+    box-shadow: 0 0 5px rgba(69, 160, 73, 0.3);
+}
+
+.search-btn {
+    padding: 12px 25px;
+    background-color: #178582;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Navigation */
+nav {
+    background-color: #178582;
+    padding: 15px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+main {
+    padding: 30px 0;
+}
+
+.payment-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.payment-container h1 {
+    color: #45a049;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Payment Form */
+.payment-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.form-section {
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+}
+
+.form-section h2 {
+    color: #178582;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #178582;
+    box-shadow: 0 0 5px rgba(23, 133, 130, 0.2);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.payment-methods {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.payment-methods h3 {
+    color: #45a049;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.payment-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.payment-icon {
+    padding: 10px 18px;
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+.price-summary {
+    margin: 30px 0;
+    padding: 25px;
+    background-color: #e8f5f4;
+    border-radius: 8px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.price-row.total {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #178582;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #178582;
+}
+
+.terms {
+    margin: 25px 0;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.checkbox-container input {
+    width: auto;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.checkbox-container a {
+    color: #178582;
+    text-decoration: none;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+}
+
+.pay-btn {
+    width: 100%;
+    padding: 18px;
+    background-color: #178582;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.pay-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(23, 133, 130, 0.3);
+}
+
+.secure-info {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.secure-info p {
+    color: #666;
+    font-size: 0.95em;
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Guarantee Section */
+.guarantee-section {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    border: 2px solid #45a049;
+}
+
+.guarantee-section h3 {
+    color: #45a049;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.guarantee-section p {
+    color: #555;
+    line-height: 1.8;
+    font-size: 1.05em;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.footer-links {
+    margin: 15px 0;
+    font-size: 0.9em;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #45a049;
+}
+
+.footer-contact {
+    margin: 15px 0;
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .search-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .payment-container h1 {
+        font-size: 2em;
+    }
+
+    .payment-form {
+        padding: 25px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-icons {
+        justify-content: center;
+    }
+
+    .price-row {
+        font-size: 1em;
+    }
+
+    .price-row.total {
+        font-size: 1.2em;
+    }
+
+    nav .container {
+        gap: 15px;
+    }
+
+    .nav-link {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
